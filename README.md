@@ -22,7 +22,9 @@ npm i @adonisjs/lucid@alpha
 npm i @adonisjs/auth@alpha
 npm i @adonisjs/shield@alpha
 npm i phc-bcrypt
+npm i adonis-bumblebee 
 ```
+more info on bumblebee at the <a href="https://github.com/rhwilr/adonis-bumblebee">github repository</a>
 
 ## Invoke packages
 ```
