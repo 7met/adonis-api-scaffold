@@ -1,31 +1,33 @@
 {
-  "typescript": true,
-  "commands": [
-    "./commands",
-    "@adonisjs/core/build/commands",
-    "@adonisjs/repl/build/commands",
-    "@adonisjs/lucid/build/commands"
-  ],
-  "exceptionHandlerNamespace": "App/Exceptions/Handler",
-  "aliases": {
-    "App": "app",
-    "Config": "config",
-    "Database": "database",
-    "Contracts": "contracts"
-  },
-  "preloads": [
-    "./start/routes",
-    "./start/kernel"
-  ],
-  "providers": [
-    "./providers/AppProvider",
-    "@adonisjs/core",
-    "@adonisjs/lucid",
-    "@adonisjs/auth",
-    "@adonisjs/shield",
-    "adonis-bumblebee-ts"
-  ],
-  "aceProviders": [
-    "@adonisjs/repl"
-  ]
+    "typescript": true,
+    "commands": [
+        "./commands",
+        "@adonisjs/core/build/commands",
+        "@adonisjs/repl/build/commands",
+        "@adonisjs/lucid/build/commands"
+    ],
+    "exceptionHandlerNamespace": "App/Exceptions/Handler",
+    "aliases": {
+        "App": "app",
+        "Config": "config",
+        "Database": "database",
+        "Contracts": "contracts"
+    },
+    "preloads": [
+        "./start/routes",
+        "./start/kernel"
+    ],
+    "providers": [
+        "./providers/AppProvider",
+        "@adonisjs/core",
+        "@adonisjs/lucid",
+        "@adonisjs/auth",
+        "@adonisjs/shield",
+        "adonis-bumblebee-ts",
+        "@knuckleswtf/scribe-adonis"
+    ],
+    "aceProviders": [
+        "@adonisjs/repl",
+        "@knuckleswtf/scribe-adonis/providers/ScribeProvider"
+    ]
 }

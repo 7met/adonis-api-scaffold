@@ -1,15 +1,11 @@
-const BumblebeeTransformer = use('Bumblebee/Transformer')
+import { TransformerAbstract } from '@ioc:Adonis/Addons/Bumblebee'
 
-class UserTransformer extends BumblebeeTransformer {
-  transform (model) {
+export default class UserTransformer extends TransformerAbstract {
+  public transform(model) {
     return {
       id: model.id,
-
-      firstname: model.first_name,
-      lastname: model.last_name
+      name: model.name,
+      email: model.email,
     }
   }
 }
-
-module.exports = UserTransformer
-

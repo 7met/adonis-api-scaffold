@@ -24,8 +24,13 @@ Route.get('/', async () => {
   return { hello: 'world' }
 })
 
+/* Authentication Routes */
 Route.post('/register', 'AuthController.register')
 Route.post('/login', 'AuthController.login')
-Route.get('/protected', async ({ response }) => {
-  response.ok({ hello: 'protected' })
-}).middleware('auth')
+
+/* API Protected Routes */
+Route.group(() => {
+
+  Route.resource('/users', 'UsersController')
+
+}).middleware('auth').prefix('/api')
