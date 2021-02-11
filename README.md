@@ -23,10 +23,8 @@ npm i @adonisjs/auth@alpha
 npm i @adonisjs/shield@alpha
 npm i phc-bcrypt
 npm i adonis-bumblebee-ts
-npm i @knuckleswtf/scribe-adonis
 ```
 more info on bumblebee at the <a href="https://github.com/kmorpex/adonis-bublebee-ts#readme">github repository</a> \
-more info on scribe at the <a href="https://scribe-js.readthedocs.io/en/latest/">readthedocs repository</a>
 
 ## Invoke packages
 ```

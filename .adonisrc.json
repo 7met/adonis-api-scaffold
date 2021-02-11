@@ -23,11 +23,9 @@
         "@adonisjs/lucid",
         "@adonisjs/auth",
         "@adonisjs/shield",
-        "adonis-bumblebee-ts",
-        "@knuckleswtf/scribe-adonis"
+        "adonis-bumblebee-ts"
     ],
     "aceProviders": [
-        "@adonisjs/repl",
-        "@knuckleswtf/scribe-adonis/providers/ScribeProvider"
+        "@adonisjs/repl"
     ]
 }
