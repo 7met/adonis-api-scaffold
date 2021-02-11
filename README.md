@@ -21,6 +21,7 @@ Run ```npm -i```
 npm i @adonisjs/lucid@alpha
 npm i @adonisjs/auth@alpha
 npm i @adonisjs/shield@alpha
+npm i phc-bcrypt
 ```
 
 ## Invoke packages
@@ -28,6 +29,11 @@ npm i @adonisjs/shield@alpha
 node ace invoke @adonisjs/lucid
 node ace invoke @adonisjs/auth
 node ace invoke @adonisjs/shield
+```
+
+add to .env file
+```
+HASH_DRIVER=bcrypt
 ```
 
 ## Things I'd still like to add
